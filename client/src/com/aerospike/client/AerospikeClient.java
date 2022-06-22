@@ -1127,7 +1127,7 @@ public class AerospikeClient implements IAerospikeClient, Closeable {
 	 * @return						if found, return record instance.  If not found, return null.
 	 * @throws AerospikeException	if read fails
 	 */
-	public final Record get(Policy policy, Key key)
+	public Record get(Policy policy, Key key)
 		throws AerospikeException {
 		if (policy == null) {
 			policy = readPolicyDefault;
